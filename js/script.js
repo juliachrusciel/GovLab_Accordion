@@ -1,4 +1,4 @@
-function(accordion) {
+(function($) {
 
   var allPanels = $('.b-accordion-section > dd').hide();
 
@@ -8,4 +8,4 @@ function(accordion) {
     return false;
   });
 
-}(jQuery);
+})(jQuery);
