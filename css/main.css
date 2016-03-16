@@ -1,7 +1,27 @@
-.b-accordion-section{
-  margin: 50px;
-
+a:link{
+  text-decoration: none;
+  color: #C7C7C7;
 }
-#dt, #dd{
-  
+.b-accordion-section{
+  margin: 3% auto;
+  width: 85%;
+  padding: 2%;
+  background-color: #00616B;
+  color: #C7C7C7;
+}
+.b-accordion-section:hover{
+  background: #444;
+}
+.b-accordion-section:after{
+  position: relative;
+}
+.header-section, .sliding-section{
+  padding: 0.5% 0.75%;
+  text-align: center;
+}
+.header-section{
+  text-decoration: none !important;
+}
+.sliding-section{
+  display: none;
 }
