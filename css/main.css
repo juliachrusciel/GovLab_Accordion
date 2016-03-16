@@ -1,6 +1,11 @@
+body{
+  font-size: 16px Sans-serif;
+}
 a:link{
   text-decoration: none;
   color: #C7C7C7;
+  display: block;
+  font-weight: bold;
 }
 .b-accordion-section{
   margin: 3% auto;
@@ -19,11 +24,8 @@ a:link{
 }
 .b-accordion-section:after{
   position: relative;
-  font-size: 24px;
   color: #000;
   font-weight: bold;
-  top: -60px;
-  left: 810px;
 }
 .b-accordion-section:target{
   background: #008895;
@@ -35,30 +37,14 @@ a:link{
 .b-accordion-section:target:hover{
   background: #008895;
 }
-.b-accordion-section:target:after{
-  left: -9999px;
-}
-
-.b-accordion-section:nth-child(1):after{ content:'1'; }
-.b-accordion-section:nth-child(1):after{ content:'2'; }
-.b-accordion-section:nth-child(1):after{ content:'3'; }
-
-.b-accordion-section:target .header-section{
-  width: 100%
-}
-.b-accordion-section:target .header-section a{
-  color: #333;
-  padding: 0;
-}
 
 .header-section, .sliding-section{
   padding: 0.5% 0.75%;
   text-align: center;
+  border: 1%;
 }
 .header-section{
   position: relative;
-  left: 0;
-  top: -15px;
 }
 
 .sliding-section{
