@@ -6,7 +6,7 @@ a:link{
   margin: 3% auto;
   width: 85%;
   padding: 2%;
-  background-color: #00616B;
+  background: #00616B;
   color: #C7C7C7;
 }
 .b-accordion-section:hover{
@@ -14,7 +14,22 @@ a:link{
 }
 .b-accordion-section:after{
   position: relative;
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
 }
+.b-accordion-section:target{
+  background: #008895;
+  padding: 1%;
+}
+.b-accordion-section:target:hover{
+  background: #008895;
+}
+
+.b-accordion-section:nth-child(1):after{ content:'1'; }
+.b-accordion-section:nth-child(1):after{ content:'2'; }
+.b-accordion-section:nth-child(1):after{ content:'3'; }
+
 .header-section, .sliding-section{
   padding: 0.5% 0.75%;
   text-align: center;
