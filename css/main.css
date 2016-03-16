@@ -5,9 +5,14 @@ a:link{
 .b-accordion-section{
   margin: 3% auto;
   width: 85%;
+  height:20%;
   padding: 2%;
   background: #00616B;
   color: #C7C7C7;
+  -webkit-transition:height 0.2s ease-out;
+  -moz-transition:height 0.2s ease-out;
+  -o-transition:height 0.2s ease-out;
+  transition:height 0.2s ease-out;
 }
 .b-accordion-section:hover{
   background: #444;
@@ -17,26 +22,45 @@ a:link{
   font-size: 24px;
   color: #000;
   font-weight: bold;
+  top: -60px;
+  left: 810px;
 }
 .b-accordion-section:target{
   background: #008895;
   padding: 1%;
+  height: 30%;
+  width: 85%;
+
 }
 .b-accordion-section:target:hover{
   background: #008895;
+}
+.b-accordion-section:target:after{
+  left: -9999px;
 }
 
 .b-accordion-section:nth-child(1):after{ content:'1'; }
 .b-accordion-section:nth-child(1):after{ content:'2'; }
 .b-accordion-section:nth-child(1):after{ content:'3'; }
 
+.b-accordion-section:target .header-section{
+  width: 100%
+}
+.b-accordion-section:target .header-section a{
+  color: #333;
+  padding: 0;
+}
+
 .header-section, .sliding-section{
   padding: 0.5% 0.75%;
   text-align: center;
 }
 .header-section{
-  text-decoration: none !important;
+  position: relative;
+  left: 0;
+  top: -15px;
 }
+
 .sliding-section{
   display: none;
 }
