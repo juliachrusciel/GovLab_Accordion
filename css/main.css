@@ -49,4 +49,8 @@ dt{
 }
 dd {
   display: none;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
 }
