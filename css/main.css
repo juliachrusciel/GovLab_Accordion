@@ -36,7 +36,7 @@ dt:hover:after, div:checked + dt:hover:after{
   background:url(../images/ic_keyboard_arrow_left_white_24dp_1x.png) no-repeat center center;
 }
 div:checked + dt:hover:after{
-	background-image: url(../images/ic_keyboard_arrow_down_white_24dp_1x.png);
+	background: url(../images/ic_keyboard_arrow_down_white_24dp_1x.png);
 }
 dt{
   position: relative;
@@ -48,4 +48,5 @@ dt{
   margin: 0 0 0 92.75%;
 }
 dd {
+  display: none;
 }
